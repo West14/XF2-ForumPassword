@@ -31,7 +31,7 @@ class Forum extends XFCP_Forum
             $data = $session->get('wfp_data');
 
             is_array($data) ?: $data = [];
-            $data[$forum->node_id] = \XF\Util\Hash::hashText($this->filter('password', 'str'));
+            $data[$forum->node_id] = $this->filter('password', 'str');
 
             $session->set('wfp_data', $data);
             return $this->redirect($redirectUrl);

@@ -18,7 +18,7 @@ class Forum extends XFCP_Forum
 
         if ($data && isset($data[$nodeId]))
         {
-            if (\XF\Util\Hash::hashText($this->wfp_password) == $data[$nodeId]) return true;
+            if ($this->wfp_password == $data[$nodeId]) return true;
         }
 
         return false;

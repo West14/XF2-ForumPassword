@@ -10,9 +10,6 @@ class Forum extends XFCP_Forum
     {
         parent::saveTypeData($form, $node, $data);
 
-        $form->setup(function () use ($data)
-        {
-            $data->wfp_password = $this->filter('wfp_password', '?str');
-        });
+        $data->wfp_password = $this->filter('wfp_password', '?str');
     }
 }

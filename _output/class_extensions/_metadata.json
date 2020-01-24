@@ -1,0 +1,14 @@
+{
+    "XF-Admin-Controller-Forum_West-ForumPassword-XF-Admin-Controller-Forum.json": {
+        "hash": "f7e354442acb975a17843b132412b43b"
+    },
+    "XF-Entity-Forum_West-ForumPassword-XF-Entity-Forum.json": {
+        "hash": "f96bbbb941539f86ff5ddc1369487331"
+    },
+    "XF-Pub-Controller-Forum_West-ForumPassword-XF-Pub-Controller-Forum.json": {
+        "hash": "09221b38520990e7650ed519086acfbd"
+    },
+    "XF-Pub-Controller-Thread_West-ForumPassword-XF-Pub-Controller-Thread.json": {
+        "hash": "5d97f93516c1af958cacde7c0ef4eee0"
+    }
+}

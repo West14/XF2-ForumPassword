@@ -18,7 +18,8 @@ class Forum extends XFCP_Forum
 
         if ($data && isset($data[$nodeId]))
         {
-            if ($this->wfp_password == $data[$nodeId]) return true;
+            if ($this->wfp_password == $data[$nodeId])
+                return true;
         }
 
         return false;

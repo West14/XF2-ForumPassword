@@ -23,7 +23,8 @@ class Forum extends XFCP_Forum
             $this->buildLink('forums', $forum)
         );
 
-        if (!$forum->wfp_password || $forum->isPasswordAccessGranted()) return $this->redirect($redirectUrl);
+        if (!$forum->wfp_password || $forum->isPasswordAccessGranted())
+            return $this->redirect($redirectUrl);
 
         if ($this->isPost())
         {

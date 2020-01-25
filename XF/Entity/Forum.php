@@ -14,6 +14,10 @@ class Forum extends XFCP_Forum
     public function isPasswordAccessGranted()
     {
         $nodeId = $this->node_id;
+
+        if (\XF::visitor()->hasNodePermission($nodeId, 'wfpBypass'))
+            return true;
+
         $data = \XF::session()->get('wfp_data');
 
         if ($data && isset($data[$nodeId]))
@@ -21,7 +25,6 @@ class Forum extends XFCP_Forum
             if ($this->wfp_password == $data[$nodeId])
                 return true;
         }
-
         return false;
     }
 }

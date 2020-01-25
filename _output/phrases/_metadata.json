@@ -1,4 +1,10 @@
 {
+    "permission.forum_wfpBypass.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "7e1ab8f3ea2bd5bd99790a2bd120f7b2"
+    },
     "wfp_password_required.txt": {
         "global_cache": true,
         "version_id": 1000010,

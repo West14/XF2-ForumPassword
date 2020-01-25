@@ -4,7 +4,7 @@ namespace West\ForumPassword\XF\Pub\Controller;
 
 class Thread extends XFCP_Thread
 {
-	protected function assertViewableThread($threadId, array $extraWith = [])
+    protected function assertViewableThread($threadId, array $extraWith = [])
     {
         $parent = parent::assertViewableThread($threadId, $extraWith);
 

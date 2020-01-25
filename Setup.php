@@ -10,9 +10,9 @@ use XF\Db\Schema\Alter;
 
 class Setup extends AbstractSetup
 {
-	use StepRunnerInstallTrait;
-	use StepRunnerUpgradeTrait;
-	use StepRunnerUninstallTrait;
+    use StepRunnerInstallTrait;
+    use StepRunnerUpgradeTrait;
+    use StepRunnerUninstallTrait;
 
     public function installStep1()
     {
@@ -20,7 +20,7 @@ class Setup extends AbstractSetup
         {
             $table->addColumn('wfp_password', 'varchar', 64)->nullable();
         });
-	}
+    }
 
     public function uninstallStep1()
     {
@@ -28,5 +28,5 @@ class Setup extends AbstractSetup
         {
             $table->dropColumns(['wfp_password']);
         });
-	}
+    }
 }

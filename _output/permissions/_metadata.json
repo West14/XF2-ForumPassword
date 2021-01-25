@@ -1,5 +1,8 @@
 {
     "forum-wfpBypass.json": {
         "hash": "a9accb917b5ccdee70cd3edca0a0499e"
+    },
+    "general-wfpAccessProtectedNodes.json": {
+        "hash": "1732141476333360460c0d3c87d0711f"
     }
 }

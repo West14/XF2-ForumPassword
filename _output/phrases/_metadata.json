@@ -5,6 +5,12 @@
         "version_string": "1.0.0",
         "hash": "da0146061bd27a8ec89d2ff32ef92654"
     },
+    "permission.general_wfpAccessProtectedNodes.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "37643a4b9b1cbd4127570885db0b7ca0"
+    },
     "wfp_password_required.txt": {
         "global_cache": true,
         "version_id": 1000010,

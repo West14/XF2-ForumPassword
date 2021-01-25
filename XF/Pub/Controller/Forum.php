@@ -6,6 +6,8 @@ use XF\Mvc\ParameterBag;
 
 class Forum extends XFCP_Forum
 {
+    use ForumPasswordTrait;
+
     /**
      * @param ParameterBag $params
      * @return \XF\Mvc\Reply\Redirect|\XF\Mvc\Reply\View
@@ -51,19 +53,7 @@ class Forum extends XFCP_Forum
         /** @var \West\ForumPassword\XF\Entity\Forum $parent */
         $parent = parent::assertViewableForum($nodeIdOrName, $extraWith);
 
-        if ($parent->wfp_password)
-        {
-            if (!$parent->isPasswordAccessGranted())
-            {
-                throw $this->exception(
-                    $this->rerouteController(
-                        'XF:Forum',
-                        'Password',
-                        $parent->toArray()
-                    )
-                );
-            }
-        }
+        $this->checkForumPasswordAccess($parent);
 
         return $parent;
     }

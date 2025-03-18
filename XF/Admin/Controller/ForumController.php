@@ -4,7 +4,7 @@ namespace West\ForumPassword\XF\Admin\Controller;
 
 use XF\Mvc\FormAction;
 
-class Forum extends XFCP_Forum
+class ForumController extends XFCP_ForumController
 {
     protected function saveTypeData(FormAction $form, \XF\Entity\Node $node, \XF\Entity\AbstractNode $data)
     {

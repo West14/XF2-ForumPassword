@@ -2,7 +2,9 @@
 
 namespace West\ForumPassword\XF\Pub\Controller;
 
-class Thread extends XFCP_Thread
+use West\ForumPassword\XF\Entity\Forum;
+
+class ThreadController extends XFCP_ThreadController
 {
     use ForumPasswordTrait;
 
@@ -10,7 +12,7 @@ class Thread extends XFCP_Thread
     {
         $parent = parent::assertViewableThread($threadId, $extraWith);
 
-        /** @var \West\ForumPassword\XF\Entity\Forum $forum */
+        /** @var Forum $forum */
         $forum = $parent->Forum;
         $this->checkForumPasswordAccess($forum);
 

@@ -2,10 +2,10 @@
     "legacy_addon_id": "",
     "title": "[West] Forum Password",
     "description": "Adds functionality which allows to protect the forum with a password.",
-    "version_id": 1000170,
-    "version_string": "1.0.1",
+    "version_id": 1010070,
+    "version_string": "1.1.0",
     "dev": "West",
-    "dev_url": "https://t.me/West99",
+    "dev_url": "",
     "faq_url": "",
     "support_url": "",
     "extra_urls": {
@@ -14,8 +14,8 @@
     },
     "require": {
         "XF": [
-            2010670,
-            "xenForo 2.1.6+"
+            2030070,
+            "xenForo 2.3.0+"
         ]
     },
     "icon": "fad fa-lock-alt"

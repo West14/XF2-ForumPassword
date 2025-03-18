@@ -2,21 +2,17 @@
 
 namespace West\ForumPassword\XF\Pub\Controller;
 
+use XF\Entity\Forum;
 use XF\Mvc\ParameterBag;
+use XF\Mvc\Reply\AbstractReply;
 
-class Forum extends XFCP_Forum
+class ForumController extends XFCP_ForumController
 {
     use ForumPasswordTrait;
 
-    /**
-     * @param ParameterBag $params
-     * @return \XF\Mvc\Reply\Redirect|\XF\Mvc\Reply\View
-     * @throws \XF\Mvc\Reply\Exception
-     */
-    public function actionPassword(ParameterBag $params)
+    public function actionPassword(ParameterBag $params): AbstractReply
     {
-        /** @var \West\ForumPassword\XF\Entity\Forum|null $forum */
-        $forum = $this->assertRecordExists('XF:Forum', $params->node_id);
+        $forum = $this->assertRecordExists(Forum::class, $params->node_id);
 
         if (!$forum) return $this->notFound();
 

@@ -1,14 +1,14 @@
 {
-    "XF-Admin-Controller-Forum_West-ForumPassword-XF-Admin-Controller-Forum.json": {
-        "hash": "f7e354442acb975a17843b132412b43b"
+    "XF-Admin-Controller-ForumController_West-ForumPassword-XF-Admin-Controller-ForumController.json": {
+        "hash": "745f247f5aac1d71200a0a9525dd743e"
     },
     "XF-Entity-Forum_West-ForumPassword-XF-Entity-Forum.json": {
         "hash": "f96bbbb941539f86ff5ddc1369487331"
     },
-    "XF-Pub-Controller-Forum_West-ForumPassword-XF-Pub-Controller-Forum.json": {
-        "hash": "09221b38520990e7650ed519086acfbd"
+    "XF-Pub-Controller-ForumController_West-ForumPassword-XF-Pub-Controller-ForumController.json": {
+        "hash": "f05a6627cc413f5d544ed9ede59a3076"
     },
-    "XF-Pub-Controller-Thread_West-ForumPassword-XF-Pub-Controller-Thread.json": {
-        "hash": "5d97f93516c1af958cacde7c0ef4eee0"
+    "XF-Pub-Controller-ThreadController_West-ForumPassword-XF-Pub-Controller-ThreadController.json": {
+        "hash": "fad7940b6725dffcb118ea82814bd3b9"
     }
 }
